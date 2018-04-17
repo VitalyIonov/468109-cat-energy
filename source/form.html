@@ -46,7 +46,7 @@
         </p>
       </header>
       <form class="program-form program-selection__form" action="https://echo.htmlacademy.ru">
-        <fieldset class="program-form__main-info">
+        <div class="program-form__main-info">
           <label class="program-form__label">
             Имя:*
             <input class="input-default" name="name">
@@ -59,8 +59,8 @@
             Возраст (лет):
             <input class="input-default" name="age" type="number">
           </label>
-        </fieldset>
-        <fieldset class="program-form__purpose">
+        </div>
+        <div class="program-form__purpose">
           <label class="program-form__label">
             <input class="input-radio" name="purpose" type="radio" value="weight loss">
             Похудение
@@ -73,18 +73,11 @@
             <input class="input-radio" name="purpose" type="radio" value="need recommendation">
             Не знаю (нужен ваш совет)
           </label>
-        </fieldset>
-        <h3 class="program-form__section-title">
-          Контактные данные (владельца кота)
-        </h3>
-        <img
-          class="green-line program-form__line"
-          src="http://placehold.it/40x40"
-          width="40"
-          height="40"
-          alt="line"
-        >
-        <fieldset class="program-form__contacts">
+        </div>
+        <div class="program-form__contacts">
+          <h3 class="program-form__section-title">
+            Контактные данные (владельца кота)
+          </h3>
           <label class="program-form__label">
             e-mail:*
             <input class="input-default input-default--email" name="email" type="email">
@@ -93,35 +86,23 @@
             телефон:*
             <input class="input-default input-default--phone" name="phone" type="tel">
           </label>
-        </fieldset>
-        <h3 class="program-form__section-title">
-          Комментарий
-        </h3>
-        <img
-          class="green-line program-form__line"
-          src="http://placehold.it/40x40"
-          width="40"
-          height="40"
-          alt="line"
-        >
-        <textarea
-          class="input-default"
-          name="comment"
-          cols="30"
-          rows="10"
-          placeholder="Расскажите обо всех повадках кота"
-        ></textarea>
-        <h3 class="program-form__section-title">
-          Дополнительно
-        </h3>
-        <img
-          class="green-line program-form__line"
-          src="http://placehold.it/40x40"
-          width="40"
-          height="40"
-          alt="line"
-        >
-        <fieldset class="program-form__additionally">
+        </div>
+        <div class="program-form__comment">
+          <h3 class="program-form__section-title">
+            Комментарий
+          </h3>
+          <textarea
+            class="input-default"
+            name="comment"
+            cols="30"
+            rows="10"
+            placeholder="Расскажите обо всех повадках кота"
+          ></textarea>
+        </div>
+        <div class="program-form__additionally">
+          <h3 class="program-form__section-title">
+            Дополнительно
+          </h3>
           <label class="program-form__label">
             <input class="input-checkbox" name="additional" type="checkbox" value="sugar substitute">
             Сахарозаменитель
@@ -138,7 +119,7 @@
             <input class="input-checkbox" name="additional" type="checkbox" value="vitamins">
             Витамины
           </label>
-        </fieldset>
+        </div>
         <input
           class="button program-form__button button--green"
           type="submit"
@@ -159,9 +140,9 @@
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </address>
     </div>
-    <div class="yandex-map page-footer__map">
+    <div class="location page-footer__location">
       <img
-        class="yandex-map__image"
+        class="location__image"
         src="http://placehold.it/320x400"
         width="320"
         height="400"
@@ -169,7 +150,9 @@
       >
     </div>
     <h3 class="page-footer__title">
-      <b>Cat</b> energy
+      <a class="page-footer__link" href="index.html">
+        <b>Cat</b> energy
+      </a>
     </h3>
     <div class="social page-footer__social">
       <ul class="social__list">
