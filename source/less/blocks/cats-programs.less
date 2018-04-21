@@ -1,0 +1,100 @@
+.cats-programs {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.cats-programs__list {
+  margin: 0;
+  padding: 0 20px;
+
+  list-style: none;
+}
+
+.cats-programs__item {
+  margin-bottom: 21px;
+  padding: 0 20px;
+
+  background-color: @gray-main;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cats-programs__title {
+  position: relative;
+
+  padding: 30px 0 29px 72px;
+
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: @text-black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 2px;
+
+    width: 50px;
+    height: 50px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -9px;
+
+    width: 80px;
+    height: 60px;
+  }
+}
+
+.cats-programs__title--weight-loss {
+  &::before {
+    background: @green-main;
+    border-radius: 50%;
+  }
+
+  &::after {
+    background: url("../../img/icon-cat-slim.svg") no-repeat;
+    background-position-x: 19px;
+    background-position-y: 9px;
+    background-size: 35px 50px;
+  }
+}
+
+.cats-programs__title--weight-gain {
+  &::before {
+    background: @green-main;
+    border-radius: 50%;
+  }
+
+  &::after {
+    background: url("../../img/icon-cat-pro.svg") no-repeat;
+    background-position-x: 2px;
+    background-position-y: 21px;
+    background-size: 67px 28px;
+  }
+}
+
+.cats-programs__description {
+  padding-bottom: 22px;
+
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+
+  border-bottom: 1px solid @gray-200;
+}
+
+.cats-programs__catalog-link {
+  display: block;
+  padding: 20px 0;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @text-black;
+}
+
