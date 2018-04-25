@@ -26,23 +26,21 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: @text-black;
+  color: @black;
 }
 
 .product-item__properties {
+  .list-reset;
+
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 .product-item__property {
   display: flex;
   justify-content: space-between;
 
-  font-family: "Arial", sans-serif;
+  font-family: @secondary-font;
   font-size: 12px;
   line-height: 16px;
 }

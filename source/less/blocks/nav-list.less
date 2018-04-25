@@ -1,14 +1,11 @@
 .nav-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  .list-reset;
 }
 
 .nav-list__item {
   height: 66px;
 
-  border-bottom: 1px solid @gray-250;
+  border-bottom: 1px solid @gray--darker;
 
   &:last-child {
     border: none;
@@ -21,8 +18,8 @@
   align-items: center;
   height: 100%;
 
-  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-family: @default-font--medium;
   font-size: 20px;
   text-transform: uppercase;
-  color: @text-black;
+  color: @black;
 }

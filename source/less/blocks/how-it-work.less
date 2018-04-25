@@ -1,6 +1,5 @@
 .how-it-work {
-  width: 320px;
-  margin: 0 auto;
+  .mobile-options;
 }
 
 .how-it-work__title {
@@ -8,14 +7,13 @@
 
   font-size: 36px;
   line-height: 60px;
-  color: @text-black;
+  color: @black;
 }
 
 .how-it-work__list {
-  margin: 0;
-  padding: 0 20px;
+  .list-reset;
 
-  list-style: none;
+  padding: 0 20px;
 }
 
 .how-it-work__item {
@@ -42,31 +40,31 @@
 
 .how-it-work__item--usefully {
   &::before {
-    background: @green-main url("../../img/advantage-leaf@1x.png") no-repeat center;
+    background: @green url("../img/advantage-leaf@1x.png") no-repeat center;
   }
 }
 
 .how-it-work__item--quickly {
   &::before {
-    background: @green-main url("../../img/advantage-powder@1x.png") no-repeat center;
+    background: @green url("../img/advantage-powder@1x.png") no-repeat center;
   }
 }
 
 .how-it-work__item--easy {
   &::before {
-    background: @green-main url("../../img/advantage-dining@1x.png") no-repeat center;
+    background: @green url("../img/advantage-dining@1x.png") no-repeat center;
   }
 }
 
 .how-it-work__item--result-soon {
   &::before {
-    background: @green-main url("../../img/advantage-clock@1x.png") no-repeat center;
+    background: @green url("../img/advantage-clock@1x.png") no-repeat center;
   }
 }
 
 .how-it-work__description {
   padding-top: 2px;
 
-  font-family: "Arial", sans-serif;
+  font-family: @secondary-font;
   line-height: 18px;
 }

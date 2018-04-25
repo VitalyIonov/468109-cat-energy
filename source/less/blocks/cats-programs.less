@@ -1,20 +1,18 @@
 .cats-programs {
-  width: 320px;
-  margin: 0 auto;
+  .mobile-options;
 }
 
 .cats-programs__list {
-  margin: 0;
-  padding: 0 20px;
+  .list-reset;
 
-  list-style: none;
+  padding: 0 20px;
 }
 
 .cats-programs__item {
   margin-bottom: 21px;
   padding: 0 20px;
 
-  background-color: @gray-main;
+  background-color: @gray--light;
 
   &:last-child {
     margin-bottom: 0;
@@ -29,7 +27,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: @text-black;
+  color: @black;
 
   &::before {
     content: "";
@@ -54,12 +52,12 @@
 
 .cats-programs__title--weight-loss {
   &::before {
-    background: @green-main;
+    background: @green;
     border-radius: 50%;
   }
 
   &::after {
-    background: url("../../img/icon-cat-slim.svg") no-repeat;
+    background: url("../img/icon-cat-slim.svg") no-repeat;
     background-position-x: 19px;
     background-position-y: 9px;
     background-size: 35px 50px;
@@ -68,12 +66,12 @@
 
 .cats-programs__title--weight-gain {
   &::before {
-    background: @green-main;
+    background: @green;
     border-radius: 50%;
   }
 
   &::after {
-    background: url("../../img/icon-cat-pro.svg") no-repeat;
+    background: url("../img/icon-cat-pro.svg") no-repeat;
     background-position-x: 2px;
     background-position-y: 21px;
     background-size: 67px 28px;
@@ -86,7 +84,7 @@
   line-height: 18px;
   font-family: "Arial", sans-serif;
 
-  border-bottom: 1px solid @gray-200;
+  border-bottom: 1px solid @gray;
 }
 
 .cats-programs__catalog-link {
@@ -95,6 +93,6 @@
 
   font-size: 16px;
   text-transform: uppercase;
-  color: @text-black;
+  color: @black;
 }
 

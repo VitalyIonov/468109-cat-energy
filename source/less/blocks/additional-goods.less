@@ -1,6 +1,5 @@
 .additional-goods {
-  width: 320px;
-  margin: 0 auto;
+  .mobile-options;
 }
 
 .additional-goods__title {
@@ -10,7 +9,7 @@
   padding-bottom: 4px;
 
   font-size: 24px;
-  color: @text-black;
+  color: @black;
 
   overflow: hidden;
 
@@ -23,22 +22,21 @@
     height: 3px;
     margin-left: 23px;
 
-    background-color: @green-main;
+    background-color: @green;
   }
 }
 
 .additional-goods__list {
-  margin: 0;
-  padding: 0 20px;
+  .list-reset;
 
-  list-style: none;
+  padding: 0 20px;
 }
 
 .additional-goods__list-item {
-  border-top: 1px solid @gray-300;
+  border-top: 1px solid @gray--dark;
 
   &:last-child {
-    border-bottom: 1px solid @gray-300;
+    border-bottom: 1px solid @gray--dark;
   }
 }
 
@@ -47,7 +45,7 @@
 
   font-size: 16px;
   text-transform: uppercase;
-  color: @text-light-black;
+  color: @black--lighter;
 }
 
 .additional-goods__list-info {
@@ -55,7 +53,7 @@
   justify-content: space-between;
   margin-bottom: 15px;
 
-  font-family: "Arial", sans-serif;
+  font-family: @secondary-font;
 }
 
 .additional-goods__list-button {
