@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -9,58 +10,57 @@
       <h1 class="visually-hidden">
         Функциональное питание и подбор программы для вашего любимого кота
       </h1>
-      <img
-        class="page-header__logo-image"
-        src="http://placehold.it/80x60"
-        width="80"
-        height="60"
-        alt="cat energy"
-      >
-      <h2 class="page-header__title">
-         <b>Cat</b> energy
-      </h2>
+      <div class="page-header__title">
+        <img
+          class="page-header__logo"
+          src="img/logo-mobile.svg"
+          width="250"
+          height="65"
+          alt="cat energy"
+        >
+      </div>
       <button class="page-header__nav-toggle" type="button">
-        Открыть меню
+        menu toggle
       </button>
       <nav class="main-nav">
-        <ul class="nav-list main-nav__list">
+        <ul class="nav-list">
           <li class="nav-list__item nav-list__item--active">
-            <a>Главная</a>
+            <a class="nav-list__link">Главная</a>
           </li>
           <li class="nav-list__item">
-            <a href="catalog.html" >Каталог продукции</a>
+            <a class="nav-list__link" href="catalog.html" >Каталог продукции</a>
           </li>
           <li class="nav-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="nav-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="program-selection page-main__program-selection">
-        <h3 class="program-selection__title">
+      <section class="motivation page-main__motivation">
+        <h2 class="motivation__title">
           Функциональное питание для котов
-        </h3>
-        <p class="program-selection__quote">
+        </h2>
+        <p class="motivation__quote">
           Занялся собой? Займись котом!
         </p>
         <img
-          class="program-selection__image"
-          src="http://placehold.it/200x300"
-          width="200"
-          height="300"
+          class="motivation__image"
+          src="img/index-can-mobile@1x.png"
+          width="280"
+          height="271"
           alt="cat energy pro"
         >
-        <a class="button program-selection__button button-green" href="form.html">
+        <a class="button button--green" href="form.html">
           Подобрать программу
         </a>
       </section>
       <section class="cats-programs page-main__cats-programs">
         <ul class="cats-programs__list">
           <li class="cats-programs__item">
-            <h5 class="cats-programs__title">
+            <h4 class="cats-programs__title cats-programs__title--weight-loss">
               Похудение
-            </h5>
+            </h4>
             <p class="cats-programs__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
@@ -70,9 +70,9 @@
             </a>
           </li>
           <li class="cats-programs__item">
-            <h5 class="cats-programs__title">
+            <h4 class="cats-programs__title cats-programs__title--weight-gain">
               Набор массы
-            </h5>
+            </h4>
             <p class="cats-programs__description">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -84,48 +84,48 @@
         </ul>
       </section>
       <section class="how-it-work page-main__how-it-work">
-        <h4 class="how-it-work__title">
+        <h3 class="how-it-work__title">
           Как это работает
-        </h4>
+        </h3>
         <ul class="how-it-work__list">
-          <li class="how-it-work__item">
+          <li class="how-it-work__item how-it-work__item--usefully">
             <p class="how-it-work__description">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
-          <li class="how-it-work__item">
+          <li class="how-it-work__item how-it-work__item--quickly">
             <p class="how-it-work__description">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
-          <li class="how-it-work__item">
+          <li class="how-it-work__item how-it-work__item--easy">
             <p class="how-it-work__description">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
-          <li class="how-it-work__item">
+          <li class="how-it-work__item how-it-work__item--result-soon">
             <p class="how-it-work__description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
           </li>
         </ul>
       </section>
-      <section class="live-example page-main__live-example">
-        <h4 class="live-example__title">
+      <section class="live-example">
+        <h3 class="live-example__title">
           Живой пример
-        </h4>
+        </h3>
         <p class="live-example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок!
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example-result live-example__result">
+        <div class="example-result live-example__result-left">
           <div class="example-result__content">
             <b class="example-result__value">5 кг</b>
             <p class="example-result__title">снижение веса</p>
           </div>
         </div>
-        <div class="example-result live-example__result">
+        <div class="example-result live-example__result-right">
           <div class="example-result__content">
             <b class="example-result__value">60 дней</b>
             <p class="example-result__title">затрачено времени</p>
@@ -136,9 +136,9 @@
         </p>
         <img
           class="live-example__image"
-          src="http://placehold.it/200x300"
-          width="200"
-          height="300"
+          src="img/before-mobile@1x.png"
+          width="320"
+          height="240"
           alt="Boris"
         >
         <footer class="live-example__toggle-block">
@@ -160,45 +160,53 @@
     <footer class="page-footer">
       <div class="partnership page-footer__partnership">
         <b class="partnership__invite">
-          приглашаем к сотрудничеству дилеров!
+          приглашаем к&nbsp;сотрудничеству дилеров!
         </b>
         <address class="partnership__address">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </address>
       </div>
-      <div class="location page-footer__location">
+      <div class="location">
         <img
           class="location__image"
-          src="http://placehold.it/320x400"
+          src="img/bg-map-mobile@1x.png"
           width="320"
           height="400"
-          alt="Yandex Map"
+          alt="location"
         >
       </div>
-      <h2 class="page-footer__title">
-        <b>Cat</b> energy
-      </h2>
-      <div class="social page-footer__social">
+      <div class="page-footer__title">
+        <div class="page-footer__logo-wrapper">
+          <img
+            class="page-footer__logo"
+            src="img/logo-footer.svg"
+            width="128"
+            height="24"
+            alt="logo"
+          >
+        </div>
+      </div>
+      <div class="social">
         <ul class="social__list">
-          <li class="social__item">
+          <li class="social__item social__item--vkontakte">
             <a
-              class="social__link social__link--vkontakte"
+              class="social__link"
               href="https://vk.com/htmlacademy"
             >
               Мы в контакте
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--instagram">
             <a
-              class="social__link social__link--instagram"
+              class="social__link"
               href="https://www.instagram.com/htmlacademy"
             >
               Мы в инстаграмме
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--facebook">
             <a
-              class="social__link social__link--facebook"
+              class="social__link"
               href="https://www.facebook.com/htmlacademy"
             >
               Мы в фейсбуке
@@ -206,16 +214,15 @@
           </li>
         </ul>
       </div>
-      <div class="copyright page-footer__copyright">
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
         </a>
         <span class="copyright__icon">
           <img
-            class="copyright__image"
-            src="http://placehold.it/30x30"
-            width="30"
-            height="30"
+            src="img/htmlacademy.svg"
+            width="40"
+            height="50"
             alt="HTML Academy"
           >
         </span>
