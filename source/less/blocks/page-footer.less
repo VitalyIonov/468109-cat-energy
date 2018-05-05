@@ -20,3 +20,46 @@
 .page-footer__logo {
   margin: 0 auto;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer__partnership {
+    padding: 65px 0 60px 0;
+  }
+
+  .page-footer__title {
+    width: auto;
+    margin: 0;
+  }
+
+  .page-footer__links {
+    display: flex;
+    justify-content: space-between;
+    width: @tablet-width;
+    margin: 0 auto;
+
+    background: @gray--light;
+  }
+
+  .page-footer__logo-wrapper {
+    margin: 0;
+    padding: 58px 0 62px 32px;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__links {
+    width: @desktop-width;
+  }
+
+  .page-footer__logo-wrapper {
+    padding: 62px 0 62px 112px;
+  }
+}

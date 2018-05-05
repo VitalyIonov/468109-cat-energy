@@ -52,3 +52,44 @@
   font-family: @secondary-font;
   font-size: 12px;
 }
+
+@media (min-width: @tablet-width) {
+  .example-result {
+    width: 120px;
+
+    &::before {
+      width: 23px;
+      height: 70px;
+    }
+
+    &::after {
+      width: 23px;
+      height: 70px;
+    }
+  }
+
+  .example-result--right {
+    &::before {
+      left: -16px;
+
+      width: 15px;
+    }
+
+    &::after {
+      right: -16px;
+
+      width: 15px;
+    }
+  }
+
+  .example-result__value {
+    margin-bottom: 13px;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example-result__title {
+    font-size: 14px;
+  }
+}

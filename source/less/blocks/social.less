@@ -44,3 +44,37 @@
 
   font-size: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .social {
+    width: auto;
+    margin: 0 88px 0 0;
+  }
+
+  .social__list {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    padding: 0 0 7px 0;
+  }
+
+  .social__item--vkontakte {
+    background-size: 30px 17px;
+  }
+
+  .social__item--instagram {
+    background-size: 24px 24px;
+  }
+
+  .social__item--facebook {
+    background-size: 15px 29px;
+    background-position-x: 14px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    margin: 0 6px 0 0;
+  }
+}

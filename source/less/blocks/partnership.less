@@ -27,3 +27,50 @@
 .partnership--gray {
   background-color: @gray--light;
 }
+
+@media (min-width: @tablet-width) {
+  .partnership {
+    justify-content: space-between;
+    width: @tablet-width;
+  }
+
+  .partnership__invite {
+    width: 240px;
+    padding-left: 72px;
+
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  .partnership__address {
+    width: 240px;
+    padding-right: 70px;
+
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .partnership__city {
+    display: block;
+    margin-top: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .partnership {
+    position: absolute;
+    top: 96px;
+    left: 116px;
+    z-index: 1;
+
+    width: 570px;
+
+    background: white;
+  }
+
+  .partnership__address {
+    text-align: left;
+    width: 248px;
+  }
+}
