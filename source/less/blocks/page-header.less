@@ -23,3 +23,35 @@
 
   border-bottom: 1px solid @gray--darker;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    flex-wrap: nowrap;
+    width: @tablet-width;
+    padding-top: 21px;
+  }
+
+  .page-header__title {
+    border: none;
+  }
+
+  .page-header__logo {
+    padding-left: 30px;
+  }
+
+  .page-header__nav-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding-top: 52px;
+  }
+
+  .page-header__title {
+    margin-left: 108px;
+  }
+}

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -39,7 +40,7 @@
     <main class="page-main">
       <section class="motivation page-main__motivation">
         <h2 class="motivation__title">
-          Функциональное питание для котов
+          Функциональное<br>питание для котов
         </h2>
         <p class="motivation__quote">
           Занялся собой? Займись котом!
@@ -51,7 +52,7 @@
           height="271"
           alt="cat energy pro"
         >
-        <a class="button button--green" href="form.html">
+        <a class="motivation__link button button--green" href="form.html">
           Подобрать программу
         </a>
       </section>
@@ -73,8 +74,8 @@
             <h4 class="cats-programs__title cats-programs__title--weight-gain">
               Набор массы
             </h4>
-            <p class="cats-programs__description">
-              Заработать авторитет среди дворовых котов и даже собак?
+            <p class="cats-programs__description cats-programs__description--weight-gain">
+              Заработать авторитет среди дворовых котов и&nbsp;даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
             <a class="cats-programs__catalog-link" href="catalog-pro.html">
@@ -105,7 +106,7 @@
           </li>
           <li class="how-it-work__item how-it-work__item--result-soon">
             <p class="how-it-work__description">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
             </p>
           </li>
         </ul>
@@ -119,40 +120,48 @@
           Отличный результат без изнуряющих тренировок!
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example-result live-example__result-left">
-          <div class="example-result__content">
-            <b class="example-result__value">5 кг</b>
-            <p class="example-result__title">снижение веса</p>
+        <div class="live-example__result-layout">
+          <div class="example-result live-example__result-left example-result--left">
+            <div class="example-result__content">
+              <b class="example-result__value">5 кг</b>
+              <p class="example-result__title">снижение веса</p>
+            </div>
           </div>
-        </div>
-        <div class="example-result live-example__result-right">
-          <div class="example-result__content">
-            <b class="example-result__value">60 дней</b>
-            <p class="example-result__title">затрачено времени</p>
+          <div class="example-result live-example__result-right example-result--right">
+            <div class="example-result__content">
+              <b class="example-result__value">60 дней</b>
+              <p class="example-result__title">затрачено времени</p>
+            </div>
           </div>
         </div>
         <p class="live-example__cost">
-          Затраты на питание: 15000 руб.
+          Затраты на питание: <span class="live-example__cost-value">15000 руб.</span>
         </p>
-        <img
-          class="live-example__image"
-          src="img/before-mobile@1x.png"
-          width="320"
-          height="240"
-          alt="Boris"
-        >
+        <div class="live-example__image-container">
+          <picture class="live-example__image-layout1">
+            <img
+              class="live-example__image live-example__image--before"
+              src="img/before-mobile@1x.png"
+              width="320"
+              height="240"
+              alt="Before"
+            >
+          </picture>
+          <picture class="live-example__image-layout2">
+            <img
+              class="live-example__image live-example__image--after"
+              src="img/after-mobile@1x.png"
+              width="320"
+              height="240"
+              alt="After"
+            >
+          </picture>
+        </div>
         <footer class="live-example__toggle-block">
           <p class="live-example__before">Было</p>
-          <label>
-            <input
-              class="live-example__switch"
-              type="range"
-              min="0"
-              max="100"
-              step="50"
-              value="50"
-            >
-          </label>
+          <div class="live-example__scroll">
+            <span class="live-example__toggle"></span>
+          </div>
           <p class="live-example__after">Стало</p>
         </footer>
       </section>
@@ -163,7 +172,7 @@
           приглашаем к&nbsp;сотрудничеству дилеров!
         </b>
         <address class="partnership__address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8 <span class="partnership__city">Санкт-Петербург</span>
         </address>
       </div>
       <div class="location">
@@ -175,8 +184,8 @@
           alt="location"
         >
       </div>
-      <div class="page-footer__title">
-        <div class="page-footer__logo-wrapper">
+      <div class="page-footer__links">
+        <div class="page-footer__title">
           <img
             class="page-footer__logo"
             src="img/logo-footer.svg"
@@ -185,48 +194,50 @@
             alt="logo"
           >
         </div>
-      </div>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item social__item--vkontakte">
-            <a
-              class="social__link"
-              href="https://vk.com/htmlacademy"
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item social__item--vkontakte">
+              <a
+                class="social__link"
+                href="https://vk.com/htmlacademy"
+              >
+                Мы в контакте
+              </a>
+            </li>
+            <li class="social__item social__item--instagram">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/htmlacademy"
+              >
+                Мы в инстаграмме
+              </a>
+            </li>
+            <li class="social__item social__item--facebook">
+              <a
+                class="social__link"
+                href="https://www.facebook.com/htmlacademy"
+              >
+                Мы в фейсбуке
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+          <span class="copyright__icon">
+            <img
+              src="img/htmlacademy.svg"
+              width="40"
+              height="50"
+              alt="HTML Academy"
             >
-              Мы в контакте
-            </a>
-          </li>
-          <li class="social__item social__item--instagram">
-            <a
-              class="social__link"
-              href="https://www.instagram.com/htmlacademy"
-            >
-              Мы в инстаграмме
-            </a>
-          </li>
-          <li class="social__item social__item--facebook">
-            <a
-              class="social__link"
-              href="https://www.facebook.com/htmlacademy"
-            >
-              Мы в фейсбуке
-            </a>
-          </li>
-        </ul>
+          </span>
+        </div>
       </div>
-      <div class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-        </a>
-        <span class="copyright__icon">
-          <img
-            src="img/htmlacademy.svg"
-            width="40"
-            height="50"
-            alt="HTML Academy"
-          >
-        </span>
-      </div>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="js/app.js"></script>
     </footer>
   </body>
 </html>

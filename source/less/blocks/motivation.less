@@ -14,6 +14,7 @@
   margin: 26px 0;
 
   font-size: 36px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -25,4 +26,100 @@
 
 .motivation__image {
   margin-bottom: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation {
+    align-items: flex-start;
+    width: @tablet-width;
+    padding-bottom: 528px;
+
+    background: url("../img/index-can-mobile@1x.png") no-repeat center bottom;
+    background-size: 630px 611px;
+    background-position-x: 110px;
+  }
+
+  .motivation__title,
+  .motivation__quote,
+  .motivation__link {
+    margin-left: 118px;
+  }
+
+  .motivation__link {
+    width: 245px;
+    padding: 17px 0;
+
+    font-size: 20px;
+  }
+
+  .motivation__title {
+    margin-top: 52px;
+    margin-bottom: 42px;
+
+    font-size: 60px;
+    text-align: left;
+    color: @black;
+  }
+
+  .motivation__quote {
+    margin-bottom: 48px;
+
+    font-size: 20px;
+    color: @black;
+  }
+
+  .motivation__image {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .motivation {
+    position: relative;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    width: @desktop-width;
+    height: 580px;
+    padding-bottom: 0;
+
+    background: none;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: -118px;
+      right: 0;
+
+      content: "";
+      width: 719px;
+      height: 696px;
+
+      background: url("../img/index-background-mobile@1x.jpg") no-repeat right top;
+      background-size: cover;
+    }
+  }
+
+  .motivation__title,
+  .motivation__quote,
+  .motivation__link {
+    margin-left: 192px;
+  }
+
+  .motivation__title {
+    margin-top: 104px;
+  }
+
+  .motivation__quote {
+    margin-bottom: 50px;
+  }
+
+  .motivation__image {
+    display: block;
+    order: 1;
+    width: 513px;
+    height: 499px;
+    margin-top: 23px;
+  }
 }

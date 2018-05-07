@@ -23,3 +23,47 @@
   text-transform: uppercase;
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+
+  .nav-list__item {
+    margin-right: 36px;
+
+    border: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .nav-list__link {
+    font-family: @default-font--regular;
+    font-size: 18px;
+    line-height: 25px;
+    color: @black--lighter;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav-list {
+    margin-right: 108px;
+  }
+
+  .nav-list__item {
+    margin-right: 34px;
+  }
+
+  .nav-list__link {
+    font-size: 20px;
+    color: white;
+  }
+
+  .nav-list__link--black {
+    color: @black;
+  }
+}

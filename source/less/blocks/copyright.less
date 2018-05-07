@@ -21,3 +21,31 @@
 .copyright__icon {
   padding-right: 13px;
 }
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    width: auto;
+    margin: 0;
+    padding: 0 0 7px 0;
+  }
+
+  .copyright__link {
+    display: flex;
+    align-items: center;
+    padding: 0 17px 0 0;
+  }
+
+  .copyright__icon {
+    padding-right: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    padding: 0;
+  }
+
+  .copyright__icon {
+    padding-right: 102px;
+  }
+}

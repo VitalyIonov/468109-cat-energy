@@ -96,3 +96,149 @@
   color: @black;
 }
 
+@media (min-width: @tablet-width) {
+  .cats-programs {
+    width: @tablet-width;
+  }
+
+  .cats-programs__list {
+    padding: 0 30px;
+  }
+
+  .cats-programs__item {
+    margin-bottom: 30px;
+    padding: 0 53px;
+  }
+
+  .cats-programs__title {
+    padding: 77px 0 24px 0;
+
+    font-size: 36px;
+
+    &::before {
+      top: 92px;
+      left: auto;
+      right: 9px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      left: auto;
+
+      background-position-x: center;
+      background-position-y: center;
+      background-size: auto;
+    }
+  }
+
+  .cats-programs__title--weight-loss {
+    &::after {
+      top: 80px;
+      right: 10px;
+
+      width: 200px;
+      height: 193px;
+    }
+  }
+
+  .cats-programs__title--weight-gain {
+    &::after {
+      top: 93px;
+      right: -24px;
+
+      width: 267px;
+      height: 193px;
+    }
+  }
+
+  .cats-programs__description {
+    padding-bottom: 36px;
+    padding-right: 225px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+  }
+
+  .cats-programs__description--weight-gain {
+    padding-right: 260px;
+  }
+
+  .cats-programs__catalog-link {
+    padding-bottom: 62px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cats-programs {
+    width: @desktop-width;
+  }
+
+  .cats-programs__list {
+    display: flex;
+    flex-direction: row;
+    padding: 0 110px;
+  }
+
+  .cats-programs__item {
+    width: 570px;
+    margin-right: 80px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .cats-programs__title {
+    padding: 75px 0 75px 163px;
+
+    &::before {
+      top: 46px;
+      left: 1px;
+      right: auto;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      right: auto;
+
+      background-position-x: center;
+      background-position-y: center;
+      background-size: auto;
+    }
+  }
+
+  .cats-programs__title--weight-loss {
+    &::after {
+      top: 38px;
+      left: 0;
+
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .cats-programs__title--weight-gain {
+    &::after {
+      top: 46px;
+      left: -16px;
+
+      width: 133px;
+      height: 100px;
+    }
+  }
+
+  .cats-programs__description {
+    padding-bottom: 10px;
+    padding-right: 0;
+  }
+}

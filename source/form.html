@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Title</title>
   </head>
@@ -25,13 +26,13 @@
       <nav class="main-nav">
         <ul class="nav-list main-nav__list">
           <li class="nav-list__item">
-            <a class="nav-list__link" href="index.html">Главная</a>
+            <a class="nav-list__link nav-list__link--black" href="index.html">Главная</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="catalog.html" >Каталог продукции</a>
+            <a class="nav-list__link nav-list__link--black" href="catalog.html" >Каталог продукции</a>
           </li>
           <li class="nav-list__item nav-list__item--active">
-            <a class="nav-list__link">Подбор программы</a>
+            <a class="nav-list__link nav-list__link--black">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -76,20 +77,20 @@
             </label>
           </div>
           <div class="program-form__contacts">
-            <h4 class="program-form__section-title">
+            <h4 class="program-form__contacts-title">
               Контактные данные (владельца кота)
             </h4>
-            <label class="program-form__label">
+            <label class="program-form__contacts-label">
               e-mail:*
               <input class="input input__default input__default--email" name="email" type="email">
             </label>
-            <label class="program-form__label">
+            <label class="program-form__contacts-label">
               телефон:*
               <input class="input input__default input__default--phone" name="phone" type="tel">
             </label>
           </div>
           <div class="program-form__comment">
-            <h4 class="program-form__section-title">
+            <h4 class="program-form__comment-title">
               Комментарий
             </h4>
             <textarea
@@ -99,7 +100,7 @@
             ></textarea>
           </div>
           <div class="program-form__additionally">
-            <h4 class="program-form__section-title">
+            <h4 class="program-form__additionally-title">
               Дополнительно
             </h4>
             <input class="input-checkbox" id="checkbox-powder" name="additional" type="checkbox" value="sugar substitute">
@@ -124,10 +125,10 @@
             type="submit"
             value="Отправить заявку"
           >
+          <small class="program-selection__legend">
+            * &#8212; Обязательные поля
+          </small>
         </form>
-        <small class="program-selection__legend">
-          * &#8212; Обязательные поля
-        </small>
       </section>
     </main>
     <footer class="page-footer">
@@ -136,7 +137,7 @@
           приглашаем к&nbsp;сотрудничеству дилеров!
         </b>
         <address class="partnership__address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8 <span class="partnership__city">Санкт-Петербург</span>
         </address>
       </div>
       <div class="location page-footer__location">
@@ -148,8 +149,8 @@
           alt="location"
         >
       </div>
-      <div class="page-footer__title">
-        <a class="page-footer__logo-wrapper" href="index.html">
+      <div class="page-footer__links">
+        <a class="page-footer__title" href="index.html">
           <img
             class="page-footer__logo"
             src="img/logo-footer.svg"
@@ -158,48 +159,50 @@
             alt="logo"
           >
         </a>
-      </div>
-      <div class="social page-footer__social">
-        <ul class="social__list">
-          <li class="social__item social__item--vkontakte">
-            <a
-              class="social__link"
-              href="https://vk.com/htmlacademy"
+        <div class="social page-footer__social">
+          <ul class="social__list">
+            <li class="social__item social__item--vkontakte">
+              <a
+                class="social__link"
+                href="https://vk.com/htmlacademy"
+              >
+                Мы в контакте
+              </a>
+            </li>
+            <li class="social__item  social__item--instagram">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/htmlacademy"
+              >
+                Мы в инстаграмме
+              </a>
+            </li>
+            <li class="social__item  social__item--facebook">
+              <a
+                class="social__link"
+                href="https://www.facebook.com/htmlacademy"
+              >
+                Мы в фейсбуке
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+          <span class="copyright__icon">
+            <img
+              src="img/htmlacademy.svg"
+              width="40"
+              height="50"
+              alt="HTML Academy"
             >
-              Мы в контакте
-            </a>
-          </li>
-          <li class="social__item  social__item--instagram">
-            <a
-              class="social__link"
-              href="https://www.instagram.com/htmlacademy"
-            >
-              Мы в инстаграмме
-            </a>
-          </li>
-          <li class="social__item  social__item--facebook">
-            <a
-              class="social__link"
-              href="https://www.facebook.com/htmlacademy"
-            >
-              Мы в фейсбуке
-            </a>
-          </li>
-        </ul>
+          </span>
+        </div>
       </div>
-      <div class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-        </a>
-        <span class="copyright__icon">
-          <img
-            src="img/htmlacademy.svg"
-            width="40"
-            height="50"
-            alt="HTML Academy"
-          >
-        </span>
-      </div>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="js/app.js"></script>
     </footer>
   </body>
 </html>
