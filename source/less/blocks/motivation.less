@@ -1,4 +1,17 @@
 .motivation {
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, @green--darker 64%, white 36%);
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, @green--darker 64%, white 36%);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 320px 305px;
+  }
+}
+
+.motivation__wrapper {
   .mobile-options;
 
   display: flex;
@@ -6,8 +19,6 @@
   align-items: center;
 
   color: white;
-
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat center top;
 }
 
 .motivation__title {
@@ -24,12 +35,18 @@
   text-transform: uppercase;
 }
 
-.motivation__image {
+.motivation__image-wrapper {
+  width: 280px;
+  height: 271px;
   margin-bottom: 3px;
 }
 
 @media (min-width: @tablet-width) {
   .motivation {
+    background: none;
+  }
+
+  .motivation__wrapper {
     align-items: flex-start;
     width: @tablet-width;
     padding-bottom: 528px;
@@ -68,13 +85,31 @@
     color: @black;
   }
 
-  .motivation__image {
+  .motivation__image-wrapper {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .motivation {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: -118px;
+      right: 0;
+
+      content: "";
+      width: 100%;
+      height: 696px;
+
+      background: linear-gradient(to left, @green--darker 50%, white 50%);
+      background-size: cover;
+    }
+  }
+
+  .motivation__wrapper {
     position: relative;
 
     flex-wrap: wrap;
@@ -96,8 +131,13 @@
       width: 719px;
       height: 696px;
 
-      background: url("../img/index-background-mobile@1x.jpg") no-repeat right top;
+      background: url("../img/index-background-desktop@1x.jpg") no-repeat top right;
       background-size: cover;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background: url("../img/index-background-desktop@2x.jpg") no-repeat top right;
+        background-size: 719px 696px;
+      }
     }
   }
 
@@ -112,14 +152,15 @@
   }
 
   .motivation__quote {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
-  .motivation__image {
+  .motivation__image-wrapper {
     display: block;
     order: 1;
-    width: 513px;
-    height: 499px;
-    margin-top: 23px;
+    width: 550px;
+    height: 500px;
+    margin-top: 25px;
+    margin-left: -43px;
   }
 }

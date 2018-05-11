@@ -22,6 +22,14 @@
   font-size: 20px;
   text-transform: uppercase;
   color: @black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -47,6 +55,24 @@
     line-height: 25px;
     color: @black--lighter;
   }
+
+  .nav-list__link--index-active,
+  .nav-list__link--catalog-active,
+  .nav-list__link--form-active {
+    position: relative;
+  }
+
+  .nav-list__link--index-active::after,
+  .nav-list__link--catalog-active::after,
+  .nav-list__link--form-active::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: @green;
+    left: 0;
+    top: 48px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -65,5 +91,9 @@
 
   .nav-list__link--black {
     color: @black;
+  }
+
+  .nav-list__link--index-active::after {
+    background-color: white;
   }
 }

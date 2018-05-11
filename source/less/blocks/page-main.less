@@ -15,19 +15,25 @@
 }
 
 .page-main__additional-goods {
-  margin-bottom: 39px;
+  margin-bottom: 34px;
 }
 
 .page-main__gift {
-  .mobile-options;
+  width: 280px;
+  margin: 0 auto;
 
-  margin: 0 auto 35px auto;
+  background: @green url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
 
-  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: @green url("../img/gift-photo-mobile@2x.jpg") no-repeat center;
+    background-size: 280px 289px;
+  }
 }
 
 .page-main__gift-description {
-  padding: 187px 80px 42px 80px;
+  width: 170px;
+  margin: 0 auto;
+  padding: 187px 0 42px 0;
 
   font-family: @secondary-font;
   font-size: 16px;
@@ -66,11 +72,18 @@
 
     margin: 0 30px 35px 30px;
 
+    background: @green url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
     background-size: 708px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: @green url("../img/gift-photo-tablet@2x.jpg") no-repeat center;
+      background-size: 708px 200px;
+    }
   }
 
   .page-main__gift-description {
     width: 170px;
+    margin: 0 auto 0 0;
     padding: 73px 10px 68px 424px;
 
     text-align: left;
@@ -81,16 +94,11 @@
   }
 
   .page-main__additional-goods {
-    margin-bottom: 77px;
+    margin-bottom: 76px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-main {
-    max-width: @desktop-width;
-    margin: 0 auto;
-  }
-
   .page-main__motivation {
     margin-bottom: 79px;
   }
@@ -100,15 +108,25 @@
   }
 
   .page-main__catalog {
-    margin-bottom: 35px;
+    margin-bottom: 72px;
+  }
+
+  .page-main__live-example {
+    padding-bottom: 20px;
   }
 
   .page-main__gift {
     width: 245px;
 
-    margin: 0 110px 0 0;
+    margin: 0 108px 0 0;
 
-    background-size: 708px;
+    background: @green url("../img/gift-photo-desktop@1x.jpg") no-repeat center;
+    background-size: 245px 289px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: @green url("../img/gift-photo-desktop@2x.jpg") no-repeat center;
+      background-size: 245px 289px;
+    }
   }
 
   .page-main__gift-description {

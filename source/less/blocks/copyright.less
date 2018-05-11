@@ -1,13 +1,9 @@
 .copyright {
-  .mobile-options;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   font-family: @secondary-font;
-
-  background-color: @gray--light;
 }
 
 .copyright__link {
@@ -16,6 +12,10 @@
 
   font-size: 16px;
   color: @gray--darkest;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__icon {
@@ -32,11 +32,11 @@
   .copyright__link {
     display: flex;
     align-items: center;
-    padding: 0 17px 0 0;
+    padding: 0 15px 0 0;
   }
 
   .copyright__icon {
-    padding-right: 21px;
+    padding-right: 25px;
   }
 }
 
@@ -45,7 +45,12 @@
     padding: 0;
   }
 
+  .copyright__link {
+    padding-top: 4px;
+  }
+
   .copyright__icon {
     padding-right: 102px;
+    padding-top: 6px;
   }
 }

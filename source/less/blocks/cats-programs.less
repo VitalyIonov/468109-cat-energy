@@ -57,7 +57,7 @@
   }
 
   &::after {
-    background: url("../img/icon-cat-slim.svg") no-repeat;
+    background: url("/img/icon-cat-slim.svg") no-repeat;
     background-position-x: 19px;
     background-position-y: 9px;
     background-size: 35px 50px;
@@ -71,7 +71,7 @@
   }
 
   &::after {
-    background: url("../img/icon-cat-pro.svg") no-repeat;
+    background: url("/img/icon-cat-pro.svg") no-repeat;
     background-position-x: 2px;
     background-position-y: 21px;
     background-size: 67px 28px;
@@ -88,12 +88,32 @@
 }
 
 .cats-programs__catalog-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 20px 0;
 
   font-size: 16px;
   text-transform: uppercase;
   color: @black;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 11px;
+    margin-left: 11px;
+
+    background: url("/img/icon-right-arrow-long.svg") no-repeat;
+  }
+
+  &:hover::after {
+    width: 33px;
+
+    background: url("/img/icon-right-arrow-verylong.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -172,6 +192,10 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      margin-left: 23px;
+    }
   }
 }
 

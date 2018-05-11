@@ -47,14 +47,22 @@
     width: 28px;
     height: 28px;
 
-    border: 1px solid @gray--dark;
+    border: 1px solid @gray--darker;
     border-radius: 50%;
+  }
+
+  &:hover::before {
+    border-color: @gray--dark;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .program-form__purpose {
   margin: 0 -20px 28px -20px;
-  padding: 20px 20px 26px 20px;
+  padding: 20px 20px 21px 20px;
 
   border: 1px solid @gray--lighter;
 }
@@ -74,6 +82,38 @@
   color: @black;
 }
 
+.program-form__contacts-label--email {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+
+    width: 17px;
+    height: 13px;
+
+    background: url("/img/icon-mail.svg") no-repeat;
+    background-size: 17px 13px;
+  }
+}
+
+.program-form__contacts-label--phone {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 13px;
+
+    width: 20px;
+    height: 20px;
+
+    background: url("/img/icon-phone.svg") no-repeat;
+    background-size: 20px 20px;
+  }
+}
+
 .program-form__checkbox-label {
   position: relative;
 
@@ -90,12 +130,20 @@
     width: 28px;
     height: 28px;
 
-    border: 1px solid @gray--dark;
+    border: 1px solid @gray--darker;
+  }
+
+  &:hover::before {
+    border-color: @gray--dark;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .program-form__additionally {
-  margin-bottom: 41px;
+  margin-bottom: 34px;
 }
 
 .program-form__button {
@@ -107,7 +155,7 @@
   .program-form {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 71px;
+    padding: 0 67px 0 71px;
   }
 
   .program-form__label,
@@ -122,7 +170,7 @@
   .program-form__checkbox-label {
     width: 283px;
     margin-bottom: 31px;
-    padding: 10px 0 10px 57px;
+    padding: 10px 0 10px 55px;
 
     font-size: 20px;
     line-height: 20px;
@@ -133,7 +181,7 @@
 
     &::before {
       top: 0;
-      left: -1px;
+      left: -4px;
 
       width: 38px;
       height: 38px;
@@ -147,29 +195,74 @@
 
   .program-form__purpose {
     width: 100%;
-    margin: 0 0 71px 0;
-    padding: 23px 0 30px 27px;
+    margin: 0 0 76px 0;
+    padding: 23px 0 25px 27px;
   }
 
   .program-form__radio-label {
     margin-bottom: 13px;
-    padding: 10px 20px 10px 61px;
+    padding: 10px 20px 10px 59px;
 
     &::before {
       top: 0;
       left: 0;
 
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
     }
+  }
+
+  .program-form__comment-title,
+  .program-form__additionally-title {
+    margin-bottom: 75px;
+
+    font-size: 36px;
   }
 
   .program-form__contacts-title,
   .program-form__comment-title,
   .program-form__additionally-title {
-    margin-bottom: 73px;
+    position: relative;
+
+    margin-bottom: 75px;
 
     font-size: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 57%;
+      left: -71px;
+
+      width: 27px;
+      height: 3px;
+
+      background-color: @green;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 57%;
+
+      width: 100%;
+      height: 3px;
+      margin-left: 41px;
+
+      background-color: @green;
+    }
+  }
+
+  .program-form__contacts-label--email {
+    &::after {
+      right: 20px;
+    }
+  }
+
+  .program-form__contacts-label--phone {
+    &::after {
+      right: 17px;
+    }
   }
 
   .program-form__contacts {
@@ -179,7 +272,7 @@
 
   .program-form__comment {
     width: 100%;
-    margin-bottom: 90px;
+    margin-bottom: 64px;
   }
 
   .program-form__additionally {
@@ -205,23 +298,39 @@
 
 @media (min-width: @desktop-width) {
   .program-form {
-    padding: 0 110px;
+    padding: 0 108px 0 112px;
   }
 
   .program-form__main-info {
     width: 570px;
-    margin-bottom: 65px;
+    margin-bottom: 69px;
     margin-right: 80px;
   }
 
   .program-form__purpose {
     width: 570px;
-    margin: 0 0 65px 0;
+    margin: 0 0 69px 0;
   }
 
   .program-form__contacts {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 68px;
+  }
+
+  .program-form__contacts-title,
+  .program-form__comment-title,
+  .program-form__additionally-title {
+    &::before {
+      top: 62%;
+      left: -109px;
+
+      width: 70px;
+    }
+
+    &::after {
+      top: 60%;
+    }
   }
 
   .program-form__contacts-title {
@@ -249,9 +358,14 @@
   .program-form__checkbox-label {
     width: 241px;
     margin: 0;
+    padding-left: 57px;
 
     &:last-child {
       margin: 0;
+    }
+
+    &::before {
+      left: -1px;
     }
   }
 

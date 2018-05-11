@@ -1,18 +1,35 @@
 .input {
   flex-grow: 1;
   width: 100%;
-  padding-left: 22px;
+  padding-left: 15px;
 
   font-size: 16px;
   line-height: 18px;
   color: @gray--darkest;
 
   border: 1px solid @gray--darker;
+
+  &:hover {
+    border: 1px solid @gray--dark;
+  }
+
+  &:focus {
+    border: 1px solid @gray--darkest;
+  }
+
+  &:invalid {
+    border: 1px solid @red;
+  }
 }
 
 .input__default {
   height: 45px;
   margin-left: 15px;
+}
+
+.input__default--has-icon {
+  margin-left: 11px;
+  padding-right: 40px;
 }
 
 .input__textarea {
@@ -36,10 +53,22 @@
     height: 52px;
     margin-left: 18px;
   }
+
+  .input__default--has-icon {
+    margin-left: 15px;
+  }
+
+  .input__textarea {
+    min-height: 174px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .input {
     padding-left: 20px;
+  }
+
+  .input__default--has-icon {
+    margin-left: 20px;
   }
 }

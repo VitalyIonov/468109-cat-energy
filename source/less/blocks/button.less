@@ -5,6 +5,7 @@
   width: 280px;
   padding: 11px 0;
 
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
@@ -17,6 +18,14 @@
 
 .button--green {
   background-color: @green;
+
+  &:hover {
+    background-color: @green--dark;
+  }
+
+  &:active {
+    color: @white--opacity-30;
+  }
 }
 
 .button--gray {
@@ -25,6 +34,14 @@
   color: @gray--darkest;
 
   background-color: @gray--light;
+
+  &:hover {
+    background-color: @gray--lighter;
+  }
+
+  &:active {
+    color: @white--opacity-30;
+  }
 }
 
 @media (min-width: @tablet-width) {
