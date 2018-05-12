@@ -55,9 +55,11 @@
     width: @tablet-width;
     padding-bottom: 528px;
 
-    background: url("../img/index-can-mobile@1x.png") no-repeat center bottom;
-    background-size: 630px 611px;
-    background-position-x: 110px;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat center bottom;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/index-can-tablet@2x.jpg") no-repeat top right;
+    }
   }
 
   .motivation__title,
