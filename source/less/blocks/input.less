@@ -26,7 +26,25 @@
   height: 45px;
   margin-left: 15px;
 
-  line-height: 45px;
+  &::-webkit-input-placeholder {
+    line-height: 23px;
+    color: @gray--darkest;
+  }
+
+  &::-moz-placeholder {
+    line-height: 23px;
+    color: @gray--darkest;
+  }
+
+  &:-moz-placeholder {
+    line-height: 23px;
+    color: @gray--darkest;
+  }
+
+  &:-ms-input-placeholder {
+    line-height: 23px;
+    color: @gray--darkest;
+  }
 }
 
 .input__default--has-icon {
@@ -66,7 +84,21 @@
     height: 52px;
     margin-left: 18px;
 
-    line-height: 52px;
+    &::-webkit-input-placeholder {
+      line-height: 28px;
+    }
+
+    &::-moz-placeholder {
+      line-height: 28px;
+    }
+
+    &:-moz-placeholder {
+      line-height: 28px;
+    }
+
+    &:-ms-input-placeholder {
+      line-height: 28px;
+    }
   }
 
   .input__default--has-icon {

@@ -13,16 +13,22 @@
   font-size: 16px;
   color: @gray--darkest;
 
+  &:hover + svg {
+    fill: @green;
+  }
+
   &:active {
+    opacity: 0.3;
+  }
+
+  &:active + svg {
     opacity: 0.3;
   }
 }
 
-.copyright__icon {
-  padding-right: 13px;
-}
-
 .copyright__academy-icon {
+  margin-right: 13px;
+
   fill: @gray--dark-3;
 
   &:hover {
@@ -47,8 +53,8 @@
     padding: 0 15px 0 0;
   }
 
-  .copyright__icon {
-    padding-right: 23px;
+  .copyright__academy-icon {
+    margin-right: 23px;
   }
 }
 
@@ -61,8 +67,8 @@
     padding-top: 4px;
   }
 
-  .copyright__icon {
-    padding-right: 102px;
-    padding-top: 6px;
+  .copyright__academy-icon {
+    margin-right: 102px;
+    margin-top: 6px;
   }
 }
