@@ -32,12 +32,20 @@
 .input__default--has-icon {
   margin-left: 11px;
   padding-right: 40px;
+
+  &:focus ~ svg {
+    fill: @green;
+  }
+
+  &:invalid ~ svg {
+    fill: @red;
+  }
 }
 
 .input__textarea {
   width: 100%;
   min-height: 151px;
-  padding: 15px 0 0 15px;
+  padding: 13px 0 0 15px;
 
   text-transform: uppercase;
 
@@ -62,7 +70,7 @@
   }
 
   .input__default--has-icon {
-    margin-left: 15px;
+    margin-left: 20px;
   }
 
   .input__textarea {

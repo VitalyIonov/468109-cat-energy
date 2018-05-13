@@ -1,8 +1,9 @@
 .input-checkbox {
   display: none;
 
-  &:checked + label::before {
-    background: url("../img/icon-tick.svg") no-repeat center;
-    background-size: 20px;
+  &:checked ~ svg {
+    display: block;
+
+    fill: @green;
   }
 }
